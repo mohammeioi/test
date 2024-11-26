@@ -1,13 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Monitoring Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Sales Monitoring Dashboard</h1>
+    <button id="theme-toggle" class="btn">Toggle Theme</button>
+  </div>
+  <div class="container">
+    <div class="card">
+      <h2>Total Sales</h2>
+      <div class="chart" id="total-sales-chart">
+        <img alt="Line chart showing total sales trends over time" height="200" src="https://storage.googleapis.com/a1aa/image/0FMO3La6hYpxN5k2ZkcLUdve0GtfzIjNn4E9uRMNUpo0C10TA.jpg" width="300"/>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Sales Growth</h2>
+      <div class="chart" id="sales-growth-chart">
+        <img alt="Bar chart showing sales growth comparison over different periods" height="200" src="https://storage.googleapis.com/a1aa/image/RWxI9YydSQ5ebCuzoNNGIuuYKoaliQ17cFQFkgAJsSvZha6JA.jpg" width="300"/>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Top-Performing Products</h2>
+      <div class="chart" id="top-products-chart">
+        <img alt="Pie chart showing the proportion of sales for top-performing products" height="200" src="https://storage.googleapis.com/a1aa/image/BrVlhzAuZbbYPNdAaA4dbDx7cdsm2l4xIf74FaadlpexC10TA.jpg" width="300"/>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2023 Sales Monitoring Dashboard. All rights reserved.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
